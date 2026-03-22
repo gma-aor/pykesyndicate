@@ -33,13 +33,16 @@ export function Ranks() {
         "Management of inter-faction disputes",
         "Representation in criminal organization summits"
       ],
+      requirements: [
+        "Chosen by Ownership"
+      ],
       members: 1
     },
     {
       icon: ScrollText,
       title: "Majordomo",
       level: "High Table",
-      color: "from-red-600 to-red-700",
+      color: "from-purple-700 to-purple-900",
       duties: [
         "Advisory role to the Illustrious Imperator",
         "Governance of operations",
@@ -47,13 +50,16 @@ export function Ranks() {
         "Enforcement of Syndicate laws and customs",
         "Recruitment and vetting of new families"
       ],
+      requirements: [
+        "Handpicked by the Illustrious Imperator"
+      ],
       members: 1
     },
     {
       icon: Globe,
       title: "Underboss",
       level: "High Table",
-      color: "from-orange-600 to-red-600",
+      color: "from-purple-600 to-amber-700",
       duties: [
         "Planetary-level Management of daily spice operations",
         "Coordination of smuggling routes",
@@ -61,13 +67,16 @@ export function Ranks() {
         "Logistics and supply chain oversight",
         "Territory expansion planning"
       ],
+      requirements: [
+        "Handpicked by the Illustrious Imperator"
+      ],
       members: 2
     },
     {
       icon: Coins,
       title: "Capo",
       level: "Officer",
-      color: "from-orange-600 to-red-600",
+      color: "from-amber-500 to-purple-700",
       duties: [
         "Territory-level Management of daily spice operations",
         "Allocation of resources across sector hideouts",
@@ -75,13 +84,16 @@ export function Ranks() {
         "Money laundering and profit skimming oversight",
         "Sanctioning of localized hits and enforcements"
       ],
+      requirements: [
+        "Handpicked from Lieutenants by Underboss+"
+      ],
       members: 4
     },
     {
       icon: Crosshair,
       title: "Lieutenant",
       level: "Officer",
-      color: "from-red-700 to-slate-700",
+      color: "from-amber-600 to-slate-800",
       duties: [
         "Tactical command of strike teams during raids",
         "On-site protection of high-value spice caravans",
@@ -89,13 +101,16 @@ export function Ranks() {
         "Field training for lower ranks",
         "Operational reporting to the Capo"
       ],
+      requirements: [
+        "Handpicked from MRs by Capo+"
+      ],
       members: 2
     },
     {
       icon: ShieldAlert,
       title: "Guard Captain",
       level: "Officer",
-      color: "from-red-700 to-slate-700",
+      color: "from-amber-600 to-slate-700",
       duties: [
         "Strategic oversight of the entire Guard division",
         "Allocation of security personnel across Syndicate sectors",
@@ -103,13 +118,16 @@ export function Ranks() {
         "Implementation of defense protocols for spice refineries",
         "Strategic security planning for High Table summits",
       ],
+      requirements: [
+        "Handpicked from Guard by the High Table"
+      ],
       members: 2
     },
     {
       icon: Dna,
       title: "Sentinel Captain",
       level: "Officer",
-      color: "from-slate-600 to-slate-700",
+      color: "from-amber-700 to-slate-900",
       duties: [
         "Strategic oversight of the entire Sentinel division",
         "Deployment of Sentinel units to high-tension zones",
@@ -117,13 +135,16 @@ export function Ranks() {
         "Local territory control",
         "Strategic enforcement of Syndicate discipline"
       ],
+      requirements: [
+        "Handpicked from Sentinel by the High Table"
+      ],
       members: 2
     },
     {
       icon: ShieldCheck,
       title: "Elite Guard",
       level: "Middle Rank",
-      color: "from-slate-700 to-slate-800",
+      color: "from-purple-800 to-slate-900",
       duties: [
         "Personal security detail for High Table members",
         "Defense of high-priority spice refineries",
@@ -131,13 +152,16 @@ export function Ranks() {
         "Advanced weaponry and shield maintenance",
         "Authorized to use lethal force without warning"
       ],
+      requirements: [
+        "Handpicked by Guard Captain"
+      ],
       members: 6
     },
     {
       icon: Shield,
       title: "Guard",
       level: "Middle Rank",
-      color: "from-slate-700 to-slate-800",
+      color: "from-purple-700 to-slate-800",
       duties: [
         "General security for Syndicate facilities",
         "Escort duty for standard commercial shipments",
@@ -145,13 +169,17 @@ export function Ranks() {
         "Monitoring of prisoner transfers",
         "Reporting suspicious activity to Guard Captains"
       ],
+      requirements: [
+        "Saboteur+",
+        "Guard Tryout"
+      ],
       members: 10
     },
     {
       icon: Zap,
       title: "Sentinel",
       level: "Middle Rank",
-      color: "from-slate-700 to-slate-800",
+      color: "from-slate-700 to-amber-900",
       duties: [
         "Armed protection of spice mining facilities",
         "Subjugation of labor forces using electrostaves",
@@ -159,13 +187,18 @@ export function Ranks() {
         "Execution of corporal punishment and torture protocols",
         "Ensuring zero-leakage security on production floors"
       ],
+      requirements: [
+        "1 Week Served",
+        "30 Crates Sold",
+        "Discretion of Lieutenant"
+      ],
       members: 6
     },
     {
       icon: Grip,
       title: "Enforcer",
       level: "Middle Rank",
-      color: "from-slate-700 to-slate-800",
+      color: "from-slate-700 to-slate-900",
       duties: [
         "Physical intimidation of local business owners",
         "Execution of mid-level muscle work",
@@ -173,13 +206,18 @@ export function Ranks() {
         "Suppression of local law enforcement interference",
         "Raid support for Lieutenant-led operations"
       ],
+      requirements: [
+        "1 Week Served",
+        "30 Crates Sold",
+        "Discretion of Lieutenant"
+      ],
       members: 4
     },
     {
       icon: Bomb,
       title: "Grenadier",
       level: "Low Rank",
-      color: "from-slate-700 to-slate-800",
+      color: "from-slate-800 to-black",
       duties: [
         "Demolitions and breaching of rival fortifications",
         "Suppressive fire during tactical retreats",
@@ -187,13 +225,18 @@ export function Ranks() {
         "Destruction of evidence during planetary raids",
         "Area-of-effect combat support"
       ],
+      requirements: [
+        "3 Days Served",
+        "5 Crates Sold",
+        "Basic Training"
+      ],
       members: 5
     },
     {
       icon: Cpu,
       title: "Specialist",
       level: "Low Rank",
-      color: "from-slate-700 to-slate-800",
+      color: "from-slate-800 to-black",
       duties: [
         "Technical support for slicer and comms equipment",
         "Maintenance of Syndicate transport vessels",
@@ -201,13 +244,18 @@ export function Ranks() {
         "Chemical analysis of raw spice precursors",
         "Electronic lockpicking and security bypass"
       ],
+      requirements: [
+        "3 Days Served",
+        "5 Crates Sold",
+        "Basic Training"
+      ],
       members: 5
     },
     {
       icon: Telescope,
       title: "Vanguard",
       level: "Low Rank",
-      color: "from-slate-700 to-slate-800",
+      color: "from-slate-800 to-black",
       duties: [
         "Lead scout for spice caravan routes",
         "Point-man for urban combat engagements",
@@ -215,13 +263,18 @@ export function Ranks() {
         "High-mobility skirmishing",
         "First-response during facility breaches"
       ],
+      requirements: [
+        "3 Days Served",
+        "5 Crates Sold",
+        "Basic Training"
+      ],
       members: 5
     },
     {
       icon: Flame,
       title: "Saboteur",
       level: "Low Rank",
-      color: "from-slate-700 to-slate-800",
+      color: "from-slate-800 to-black",
       duties: [
         "Infiltration of rival manufacturing plants",
         "Disruption of local planetary power grids",
@@ -229,19 +282,27 @@ export function Ranks() {
         "Spreading misinformation in local cantinas",
         "Disabling security systems prior to raids"
       ],
+      requirements: [
+        "3 Days Served",
+        "5 Crates Sold",
+        "Basic Training"
+      ],
       members: 5
     },
     {
       icon: User,
       title: "Footsoldier",
       level: "Low Rank",
-      color: "from-slate-700 to-slate-800",
+      color: "from-slate-900 to-black",
       duties: [
         "General labor and spice transportation",
         "Basic perimeter patrol and sentry duty",
         "Following direct orders from Lieutenants",
         "Assisting in mass-scale cargo loading",
         "Entry-level combat and suppressive fire"
+      ],
+      requirements: [
+        "Enlist in the Syndicate"
       ],
       members: 15
     },
@@ -267,7 +328,7 @@ export function Ranks() {
           return (
             <Card
               key={index}
-              className="bg-slate-900/50 border-red-900/30 overflow-hidden hover:shadow-lg hover:shadow-red-900/20 transition-all"
+              className="bg-slate-900/50 border-amber-900/30 overflow-hidden hover:shadow-lg hover:shadow-amber-900/20 transition-all"
             >
               <div className="p-6">
                 <div className="flex flex-col md:flex-row md:items-start gap-6">
@@ -290,14 +351,29 @@ export function Ranks() {
                   </div>
 
                   {/* Duties */}
-                  <div className="md:w-2/3">
-                    <h4 className="text-sm font-semibold text-red-400 mb-3 uppercase tracking-wide">
+                  <div className="md:w-1/3">
+                    <h4 className="text-sm font-semibold text-purple-400 mb-3 uppercase tracking-wide">
                       Responsibilities & Duties
                     </h4>
                     <ul className="space-y-2">
                       {rank.duties.map((duty, dutyIndex) => (
                         <li key={dutyIndex} className="flex items-start gap-2 text-slate-300 text-sm">
-                          <span className="text-red-500 mt-1">▸</span>
+                          <span className="text-amber-500 mt-1">▸</span>
+                          <span>{duty}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Duties */}
+                  <div className="md:w-1/3">
+                    <h4 className="text-sm font-semibold text-purple-400 mb-3 uppercase tracking-wide">
+                      Requirements
+                    </h4>
+                    <ul className="space-y-2">
+                      {rank.requirements.map((duty, dutyIndex) => (
+                        <li key={dutyIndex} className="flex items-start gap-2 text-slate-300 text-sm">
+                          <span className="text-amber-500 mt-1">▸</span>
                           <span>{duty}</span>
                         </li>
                       ))}
@@ -316,8 +392,8 @@ export function Ranks() {
         <div className="space-y-3 text-slate-300">
           <p>
             Advancement through the ranks is earned through demonstrated loyalty, successful operations,
-            and contributions to the Syndicate's prosperity. Promotions are granted by the Elder Council
-            upon recommendation from superior officers.
+            and contributions to the Syndicate's prosperity. Promotions are granted by the High Table and Officers
+            upon recommendation from superior officers or fulfilling promotion requirements.
           </p>
           <p className="text-slate-400 text-sm italic">
             "Loyalty is rewarded. Failure is not forgotten. Success is the only currency that matters."
