@@ -100,10 +100,10 @@ export function Events() {
   const heists = [
     {
       name: "Operation Golden Vault",
-      target: "Republic Treasury Transport",
+      target: "Imperial Treasury Transport",
       date: "April 10, 2026",
       location: "Mid Rim Hyperspace Lane",
-      objective: "Acquisition of Republic Credit Reserves",
+      objective: "Acquisition of Imperial Credit Reserves",
       reward: "3,500,000 Credits (Estimated)",
       difficulty: "Extreme",
       teamSize: 12,
@@ -244,32 +244,35 @@ export function Events() {
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
           Operations & Events
         </h1>
-        <p className="text-slate-300 max-w-2xl mx-auto">
+        <p className="text-slate-300 max-w-2xl mx-auto mb-2">
           Current and upcoming Syndicate activities including spice runs, tournaments,
           strategic operations, bounties, and organizational events.
+        </p>
+        <p className="text-slate-300 text-sm italic">
+          All cards under tabs are template cards, not actual events yet.<br></br>Spice runs and Heists would be classified within the Pyke Discord.
         </p>
       </div>
 
       {/* Tabs */}
       <Tabs defaultValue="spice-runs" className="w-full">
-        <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 bg-slate-900/50 border border-red-900/30 mb-8">
-          <TabsTrigger value="spice-runs" className="data-[state=active]:bg-red-600">
+        <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 bg-slate-900/50 border border-amber-900/30 mb-8">
+          <TabsTrigger value="spice-runs" className="text-gray-400 data-[state=active]:text-gray-100 data-[state=active]:bg-purple-400 cursor-pointer">
             <Package className="w-4 h-4 mr-2" />
             Spice Runs
           </TabsTrigger>
-          <TabsTrigger value="tournaments" className="data-[state=active]:bg-red-600">
+          <TabsTrigger value="tournaments" className="text-gray-400 data-[state=active]:text-gray-100 data-[state=active]:bg-purple-400 cursor-pointer">
             <Trophy className="w-4 h-4 mr-2" />
             Tournaments
           </TabsTrigger>
-          <TabsTrigger value="heists" className="data-[state=active]:bg-red-600">
+          <TabsTrigger value="heists" className="text-gray-400 data-[state=active]:text-gray-100 data-[state=active]:bg-purple-400 cursor-pointer">
             <Swords className="w-4 h-4 mr-2" />
             Heists
           </TabsTrigger>
-          <TabsTrigger value="bounties" className="data-[state=active]:bg-red-600">
+          <TabsTrigger value="bounties" className="text-gray-400 data-[state=active]:text-gray-100 data-[state=active]:bg-purple-400 cursor-pointer">
             <Target className="w-4 h-4 mr-2" />
             Bounties
           </TabsTrigger>
-          <TabsTrigger value="events" className="data-[state=active]:bg-red-600">
+          <TabsTrigger value="events" className="text-gray-400 data-[state=active]:text-gray-100 data-[state=active]:bg-purple-400 cursor-pointer">
             <Calendar className="w-4 h-4 mr-2" />
             Events
           </TabsTrigger>
@@ -279,7 +282,7 @@ export function Events() {
         <TabsContent value="spice-runs" className="space-y-6">
           <div className="grid gap-6">
             {spiceRuns.map((run, index) => (
-              <Card key={index} className="bg-slate-900/50 border-red-900/30 p-6 hover:shadow-lg hover:shadow-red-900/20 transition-all">
+              <Card key={index} className="bg-slate-900/50 border-amber-900/30 p-6 hover:shadow-lg hover:shadow-amber-900/20 transition-all">
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 mb-4">
                   <div>
                     <h3 className="text-xl font-bold text-white mb-2">{run.name}</h3>
@@ -293,32 +296,32 @@ export function Events() {
                     </div>
                   </div>
                   <div className="text-right">
-                    <div className="text-2xl font-bold text-red-500">{run.value}</div>
+                    <div className="text-2xl font-bold text-amber-500">{run.value}</div>
                     <div className="text-sm text-slate-400">Estimated Value</div>
                   </div>
                 </div>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
                   <div className="flex items-center gap-2 text-sm">
-                    <Calendar className="w-4 h-4 text-red-500" />
+                    <Calendar className="w-4 h-4 text-purple-500" />
                     <span className="text-slate-300">{run.date}</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm">
-                    <Clock className="w-4 h-4 text-red-500" />
+                    <Clock className="w-4 h-4 text-purple-500" />
                     <span className="text-slate-300">{run.time}</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm">
-                    <Users className="w-4 h-4 text-red-500" />
+                    <Users className="w-4 h-4 text-purple-500" />
                     <span className="text-slate-300">{run.pilots} Pilots / {run.escorts} Escorts</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm">
-                    <Package className="w-4 h-4 text-red-500" />
+                    <Package className="w-4 h-4 text-purple-500" />
                     <span className="text-slate-300">{run.cargo}</span>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-2">
-                  <MapPin className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                  <MapPin className="w-4 h-4 text-purple-500 mt-1 flex-shrink-0" />
                   <span className="text-slate-400 text-sm">{run.route}</span>
                 </div>
               </Card>
@@ -330,7 +333,7 @@ export function Events() {
         <TabsContent value="tournaments" className="space-y-6">
           <div className="grid gap-6">
             {tournaments.map((tournament, index) => (
-              <Card key={index} className="bg-slate-900/50 border-red-900/30 p-6 hover:shadow-lg hover:shadow-red-900/20 transition-all">
+              <Card key={index} className="bg-slate-900/50 border-amber-900/30 p-6 hover:shadow-lg hover:shadow-amber-900/20 transition-all">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-yellow-600 to-orange-600 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Trophy className="w-6 h-6 text-white" />
@@ -347,19 +350,19 @@ export function Events() {
                 
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="flex items-center gap-2 text-sm">
-                    <Calendar className="w-4 h-4 text-red-500" />
+                    <Calendar className="w-4 h-4 text-purple-500" />
                     <span className="text-slate-300">{tournament.date}</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm">
-                    <MapPin className="w-4 h-4 text-red-500" />
+                    <MapPin className="w-4 h-4 text-purple-500" />
                     <span className="text-slate-300">{tournament.location}</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm">
-                    <Users className="w-4 h-4 text-red-500" />
+                    <Users className="w-4 h-4 text-purple-500" />
                     <span className="text-slate-300">{tournament.participants} Participants</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm">
-                    <Star className="w-4 h-4 text-red-500" />
+                    <Star className="w-4 h-4 text-purple-500" />
                     <span className="text-slate-300">{tournament.prize}</span>
                   </div>
                 </div>
@@ -372,7 +375,7 @@ export function Events() {
         <TabsContent value="heists" className="space-y-6">
           <div className="grid gap-6">
             {heists.map((heist, index) => (
-              <Card key={index} className="bg-slate-900/50 border-red-900/30 p-6 hover:shadow-lg hover:shadow-red-900/20 transition-all">
+              <Card key={index} className="bg-slate-900/50 border-amber-900/30 p-6 hover:shadow-lg hover:shadow-amber-900/20 transition-all">
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 mb-4">
                   <div>
                     <h3 className="text-xl font-bold text-white mb-2">{heist.name}</h3>
@@ -386,33 +389,33 @@ export function Events() {
                     </div>
                   </div>
                   <div className="text-right">
-                    <div className="text-lg font-bold text-red-500">{heist.reward}</div>
+                    <div className="text-lg font-bold text-amber-500">{heist.reward}</div>
                     <div className="text-sm text-slate-400">Expected Reward</div>
                   </div>
                 </div>
                 
                 <div className="grid md:grid-cols-2 gap-4 mb-4">
                   <div>
-                    <p className="text-sm text-red-400 font-semibold mb-1">Target</p>
+                    <p className="text-sm text-purple-400 font-semibold mb-1">Target</p>
                     <p className="text-slate-300">{heist.target}</p>
                   </div>
                   <div>
-                    <p className="text-sm text-red-400 font-semibold mb-1">Objective</p>
+                    <p className="text-sm text-purple-400 font-semibold mb-1">Objective</p>
                     <p className="text-slate-300">{heist.objective}</p>
                   </div>
                 </div>
                 
                 <div className="grid md:grid-cols-3 gap-4">
                   <div className="flex items-center gap-2 text-sm">
-                    <Calendar className="w-4 h-4 text-red-500" />
+                    <Calendar className="w-4 h-4 text-purple-500" />
                     <span className="text-slate-300">{heist.date}</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm">
-                    <MapPin className="w-4 h-4 text-red-500" />
+                    <MapPin className="w-4 h-4 text-purple-500" />
                     <span className="text-slate-300">{heist.location}</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm">
-                    <Users className="w-4 h-4 text-red-500" />
+                    <Users className="w-4 h-4 text-purple-500" />
                     <span className="text-slate-300">{heist.teamSize} Operatives</span>
                   </div>
                 </div>
@@ -425,7 +428,7 @@ export function Events() {
         <TabsContent value="bounties" className="space-y-6">
           <div className="grid gap-6">
             {bounties.map((bounty, index) => (
-              <Card key={index} className="bg-slate-900/50 border-red-900/30 p-6 hover:shadow-lg hover:shadow-red-900/20 transition-all">
+              <Card key={index} className="bg-slate-900/50 border-amber-900/30 p-6 hover:shadow-lg hover:shadow-amber-900/20 transition-all">
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 mb-4">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-gradient-to-br from-red-600 to-red-800 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -446,7 +449,7 @@ export function Events() {
                   <div className="text-right">
                     <div className="flex items-center gap-2 justify-end mb-1">
                       <Coins className="w-5 h-5 text-yellow-500" />
-                      <span className="text-2xl font-bold text-yellow-500">{bounty.reward}</span>
+                      <span className="text-2xl font-bold text-amber-500">{bounty.reward}</span>
                     </div>
                     <div className="text-sm text-slate-400">Bounty</div>
                   </div>
@@ -454,15 +457,15 @@ export function Events() {
                 
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <p className="text-sm text-red-400 font-semibold mb-1">Crime</p>
+                    <p className="text-sm text-purple-400 font-semibold mb-1">Crime</p>
                     <p className="text-slate-300">{bounty.crime}</p>
                   </div>
                   <div>
-                    <p className="text-sm text-red-400 font-semibold mb-1">Last Known Location</p>
+                    <p className="text-sm text-purple-400 font-semibold mb-1">Last Known Location</p>
                     <p className="text-slate-300">{bounty.lastSeen}</p>
                   </div>
                   <div className="md:col-span-2">
-                    <p className="text-sm text-red-400 font-semibold mb-1">Preferred Outcome</p>
+                    <p className="text-sm text-purple-400 font-semibold mb-1">Preferred Outcome</p>
                     <p className="text-slate-300">{bounty.preferredOutcome}</p>
                   </div>
                 </div>
@@ -475,7 +478,7 @@ export function Events() {
         <TabsContent value="events" className="space-y-6">
           <div className="grid gap-6">
             {generalEvents.map((event, index) => (
-              <Card key={index} className="bg-slate-900/50 border-red-900/30 p-6 hover:shadow-lg hover:shadow-red-900/20 transition-all">
+              <Card key={index} className="bg-slate-900/50 border-amber-900/30 p-6 hover:shadow-lg hover:shadow-amber-900/20 transition-all">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-orange-600 to-red-600 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Calendar className="w-6 h-6 text-white" />
@@ -492,15 +495,15 @@ export function Events() {
                 
                 <div className="grid md:grid-cols-3 gap-4">
                   <div className="flex items-center gap-2 text-sm">
-                    <Calendar className="w-4 h-4 text-red-500" />
+                    <Calendar className="w-4 h-4 text-purple-500" />
                     <span className="text-slate-300">{event.date}</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm">
-                    <MapPin className="w-4 h-4 text-red-500" />
+                    <MapPin className="w-4 h-4 text-purple-500" />
                     <span className="text-slate-300">{event.location}</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm">
-                    <Users className="w-4 h-4 text-red-500" />
+                    <Users className="w-4 h-4 text-purple-500" />
                     <span className="text-slate-300">{event.attendance}</span>
                   </div>
                 </div>

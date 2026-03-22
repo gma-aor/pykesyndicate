@@ -211,7 +211,7 @@ export function Ranks() {
         "30 Crates Sold",
         "Discretion of Lieutenant"
       ],
-      members: 4
+      members: 6
     },
     {
       icon: Bomb,
@@ -304,7 +304,7 @@ export function Ranks() {
       requirements: [
         "Enlist in the Syndicate"
       ],
-      members: 15
+      members: 13
     },
   ];
 
