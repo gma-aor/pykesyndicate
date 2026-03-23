@@ -11,6 +11,7 @@ export function Layout() {
     { path: "/ranks", label: "Ranks" },
     { path: "/families", label: "Families" },
     { path: "/events", label: "Events" },
+    { path: "/services", label: "Services" },
   ];
 
   const isActive = (path: string) => {
