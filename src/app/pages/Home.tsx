@@ -31,7 +31,7 @@ export function Home() {
       <div className="text-center mb-16">
         <div className="inline-block mb-6">
           <div className="w-24 h-24 bg-gradient-to-br from-purple-600 to-black-600 rounded-2xl flex items-center justify-center shadow-2xl shadow-yellow-900/50">
-            <div className="w-16 h-16 bg-[url(src/app/assets/logo.png)] bg-cover bg-center"></div>
+            <div className="w-16 h-16 bg-[url(/logo.png)] bg-cover bg-center"></div>
           </div>
         </div>
         <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 tracking-tight">
