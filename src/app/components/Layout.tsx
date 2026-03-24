@@ -38,7 +38,7 @@ export function Layout() {
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3 group">
               <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-black-600 rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform shadow-lg shadow-yellow-900/50">
-                <div className="w-8 h-8 bg-[url(public/logo.png)] bg-cover bg-center"></div>
+                <div className="w-8 h-8 bg-[url(/logo.png)] bg-cover bg-center"></div>
               </div>
               <div>
                 <h1 className="text-xl font-bold text-amber-300 tracking-wider">PYKE SYNDICATE</h1>
