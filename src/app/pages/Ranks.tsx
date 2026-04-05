@@ -153,7 +153,7 @@ export function Ranks() {
         "Authorized to use lethal force without warning"
       ],
       requirements: [
-        "Handpicked by Guard Captain"
+        "Elite Guard Tryout"
       ],
       members: 6
     },
@@ -189,8 +189,7 @@ export function Ranks() {
       ],
       requirements: [
         "1 Week Served",
-        "30 Crates Sold",
-        "Discretion of Lieutenant"
+        "Sentinel Tryout"
       ],
       members: 6
     },
@@ -208,7 +207,6 @@ export function Ranks() {
       ],
       requirements: [
         "1 Week Served",
-        "30 Crates Sold",
         "Discretion of Lieutenant"
       ],
       members: 6
@@ -226,8 +224,8 @@ export function Ranks() {
         "Area-of-effect combat support"
       ],
       requirements: [
-        "3 Days Served",
-        "5 Crates Sold",
+        "5 Days Served",
+        "8 Events",
         "Basic Training"
       ],
       members: 5
@@ -246,7 +244,7 @@ export function Ranks() {
       ],
       requirements: [
         "3 Days Served",
-        "5 Crates Sold",
+        "3 Events",
         "Basic Training"
       ],
       members: 5
@@ -265,7 +263,7 @@ export function Ranks() {
       ],
       requirements: [
         "3 Days Served",
-        "5 Crates Sold",
+        "5 Events",
         "Basic Training"
       ],
       members: 5
@@ -284,7 +282,7 @@ export function Ranks() {
       ],
       requirements: [
         "3 Days Served",
-        "5 Crates Sold",
+        "3 Events",
         "Basic Training"
       ],
       members: 5
