@@ -36,7 +36,8 @@ export function Ranks() {
       requirements: [
         "Chosen by Ownership"
       ],
-      members: 1
+      members: 1,
+      salary: 1000
     },
     {
       icon: ScrollText,
@@ -53,7 +54,8 @@ export function Ranks() {
       requirements: [
         "Handpicked by the Illustrious Imperator"
       ],
-      members: 1
+      members: 1,
+      salary: 750
     },
     {
       icon: Globe,
@@ -70,7 +72,8 @@ export function Ranks() {
       requirements: [
         "Handpicked by the Illustrious Imperator"
       ],
-      members: 2
+      members: 3,
+      salary: 550
     },
     {
       icon: Coins,
@@ -87,7 +90,8 @@ export function Ranks() {
       requirements: [
         "Handpicked from Lieutenants by Underboss+"
       ],
-      members: 4
+      members: 3,
+      salary: 400
     },
     {
       icon: Crosshair,
@@ -104,7 +108,8 @@ export function Ranks() {
       requirements: [
         "Handpicked from MRs by Capo+"
       ],
-      members: 2
+      members: 2,
+      salary: 300
     },
     {
       icon: ShieldAlert,
@@ -121,7 +126,8 @@ export function Ranks() {
       requirements: [
         "Handpicked from Guard by the High Table"
       ],
-      members: 2
+      members: 2,
+      salary: 225
     },
     {
       icon: Dna,
@@ -138,7 +144,8 @@ export function Ranks() {
       requirements: [
         "Handpicked from Sentinel by the High Table"
       ],
-      members: 2
+      members: 2,
+      salary: 225
     },
     {
       icon: ShieldCheck,
@@ -155,7 +162,8 @@ export function Ranks() {
       requirements: [
         "Elite Guard Tryout"
       ],
-      members: 6
+      members: 6,
+      salary: 175
     },
     {
       icon: Shield,
@@ -173,7 +181,8 @@ export function Ranks() {
         "Saboteur+",
         "Guard Tryout"
       ],
-      members: 10
+      members: 10,
+      salary: 125
     },
     {
       icon: Zap,
@@ -191,7 +200,8 @@ export function Ranks() {
         "1 Week Served",
         "Sentinel Tryout"
       ],
-      members: 6
+      members: 6,
+      salary: 125
     },
     {
       icon: Grip,
@@ -209,7 +219,8 @@ export function Ranks() {
         "1 Week Served",
         "Discretion of Lieutenant"
       ],
-      members: 6
+      members: 6,
+      salary: 80
     },
     {
       icon: Bomb,
@@ -228,7 +239,8 @@ export function Ranks() {
         "8 Events",
         "Basic Training"
       ],
-      members: 5
+      members: 5,
+      salary: 40
     },
     {
       icon: Cpu,
@@ -247,7 +259,8 @@ export function Ranks() {
         "3 Events",
         "Basic Training"
       ],
-      members: 5
+      members: 5,
+      salary: 65
     },
     {
       icon: Telescope,
@@ -266,7 +279,8 @@ export function Ranks() {
         "5 Events",
         "Basic Training"
       ],
-      members: 5
+      members: 5,
+      salary: 40
     },
     {
       icon: Flame,
@@ -285,7 +299,8 @@ export function Ranks() {
         "3 Events",
         "Basic Training"
       ],
-      members: 5
+      members: 5,
+      salary: 40
     },
     {
       icon: User,
@@ -302,7 +317,8 @@ export function Ranks() {
       requirements: [
         "Enlist in the Syndicate"
       ],
-      members: 13
+      members: 13,
+      salary: 20
     },
   ];
 
@@ -343,6 +359,9 @@ export function Ranks() {
                         </Badge>
                         <Badge variant="outline" className="border-slate-600 text-slate-400 text-xs">
                           {rank.members} {rank.members === 1 ? 'Member' : 'Members'}
+                        </Badge>
+                        <Badge variant="outline" className="border-green-600/50 text-green-400 text-xs">
+                          {rank.salary}ᖬ
                         </Badge>
                       </div>
                     </div>

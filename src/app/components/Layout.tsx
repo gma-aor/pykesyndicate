@@ -9,6 +9,7 @@ export function Layout() {
   const navLinks = [
     { path: "/", label: "Home" },
     { path: "/ranks", label: "Ranks" },
+    { path: "/spice", label: "Spice" },
     { path: "/families", label: "Families" },
     { path: "/events", label: "Events" },
     { path: "/services", label: "Services" },
