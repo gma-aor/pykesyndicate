@@ -217,22 +217,74 @@ export function Families() {
 
       {/* Additional Info */}
       <Card className="bg-gradient-to-r from-red-950/50 to-orange-950/50 border-red-900/50 p-8 mt-12">
-        <h2 className="text-2xl font-bold text-white mb-4">Family Structure & Cooperation</h2>
-        <div className="space-y-3 text-slate-300">
-          <p>
-            Each family operates with significant autonomy within their area of expertise, but all answer
-            to the High Table and Illustrious Imperator. Inter-family cooperation is not just encouraged—it's
-            mandatory for the success of Syndicate operations.
+        <h2 className="text-2xl font-bold text-white mb-6">Joining Process</h2>
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-lg font-semibold text-red-400 mb-3">The Sponsorship Program</h3>
+            <p className="text-slate-300">
+              Instead of applying directly, a player must be <span className="font-semibold text-white">"sponsored"</span> by an existing Core Family member. 
+              They act as a Mentor, and their own reputation is on the line if the recruit fails.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold text-red-400 mb-3">The "Shadow" Phase</h3>
+            <p className="text-slate-300">
+              Before full induction, recruits are given a temporary <span className="font-semibold text-white">"Associate"</span> tag. 
+              They must complete one specific task related to that family (e.g., a successful spice run for the Kessel Coalition) 
+              to earn their permanent seat at the table.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold text-red-400 mb-3">Blood Oaths</h3>
+            <p className="text-slate-300">
+              During the ceremony, recruits will perform a blood oath, owing their ever lasting loyalty to their new family.
+            </p>
+          </div>
+        </div>
+      </Card>
+
+      <Card className="bg-gradient-to-r from-red-950/50 to-orange-950/50 border-red-900/50 p-8 mt-8">
+        <h2 className="text-2xl font-bold text-white mb-6">Family Actions</h2>
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-lg font-semibold text-red-400 mb-3">Quota Challenges</h3>
+            <p className="text-slate-300">
+              Families must hit a weekly <span className="font-semibold text-white">"Resource Goal."</span> If met, all members get a salary bonus; 
+              if missed, the High Table "audits" the family (a roleplay event).
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold text-red-400 mb-3">Underworld Briefings</h3>
+            <p className="text-slate-300">
+              Crimson Moon members act as <span className="font-semibold text-white">"Scouts,"</span> reporting on rival group activities 
+              or finding "hidden" spawns in the Coruscant Underworld.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold text-red-400 mb-3">Treaty Hosting</h3>
+            <p className="text-slate-300">
+              The Hutt Liaison Delegation could be responsible for physically standing at border checkpoints or hosting "sit-downs" 
+              in a dedicated lounge to negotiate with visitors.
+            </p>
+          </div>
+
+          <p className="text-slate-400 text-sm italic mt-4">
+            More family-specific procedures to be added in the future.
           </p>
-          <p>
-            Families share resources, intelligence, and profits according to contribution and need.
-            Regular councils ensure alignment with Syndicate goals and resolve any conflicts between families.
-          </p>
-          <p className="text-slate-400 text-sm">
-            The majority of families are chosen by individual members preference or by allocation.
-          </p>
-          <p className="text-slate-400 text-sm italic">
-            "Divided we are vulnerable. United under the Pyke banner, we are unstoppable."
+        </div>
+      </Card>
+
+      <Card className="bg-gradient-to-r from-red-950/50 to-orange-950/50 border-red-900/50 p-8 mt-8">
+        <h2 className="text-2xl font-bold text-white mb-6">The "House Rivalry" Mechanic</h2>
+        <div>
+          <h3 className="text-lg font-semibold text-red-400 mb-3">The High Table's Favor</h3>
+          <p className="text-slate-300">
+            Every two weeks, the family with the highest <span className="font-semibold text-white">"Activity Score"</span> or <span className="font-semibold text-white">"Production Total"</span> receives 
+            a buff (e.g., +10 pay in their payroll).
           </p>
         </div>
       </Card>
